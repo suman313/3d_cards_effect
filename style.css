@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url("/assets/dark_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.outer_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  min-height: 300px;
+  border: 4px solid #fff;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  overflow: hidden;
+  transition: all 0.1s ease-in;
+}
+.for_border_only {
+  position: absolute;
+  border: 2px solid #fff;
+  border-radius: 18px;
+  height: 95%;
+  width: 95%;
+}
+
+.inner_card {
+  position: absolute;
+  bottom: 0;
+}
+.card_1_img {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("/assets/nature_1.jpg");
+  background-size: cover;
+  transform: translateZ(-1px) scale(2.2);
+  opacity: 0.5;
+  transition: all 0.13s ease;
+}
+.card_2_img {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("/assets/nature_2.jpg");
+  background-size: cover;
+  transform: translateZ(-1px) scale(1.5);
+  /* filter: blur(0.5px); */
+  opacity: 0.5;
+  transition: all 0.13s ease;
+}
+.card_3_img {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("/assets/nature_3.jpg");
+  background-size: cover;
+  transform: translateZ(-1px) scale(2.2);
+  opacity: 0.5;
+  transition: all 0.13s ease;
+}
+
+/* .card:hover {
+  transform: rotate3d(0, 1, 0.5, 3.142rad);
+} */
+.description {
+  /* somecode */
+  padding: 8px;
+  transform: translateY(80px);
+  transition: all 0.3s ease-in-out;
+}
+h1 {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+p {
+  color: #fff;
+}
+.p_h {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0;
+}
+.p_d {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+}
